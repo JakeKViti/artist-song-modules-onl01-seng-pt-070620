@@ -1,6 +1,6 @@
 require 'pry'
 require_relative '../lib/concerns/memorable'
-#require_relative '../lib/concerns/paramable'
+require_relative '../lib/concerns/paramable'
 
 class Artist
   extend Memorable
@@ -39,7 +39,7 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+#  def to_param
+#    name.downcase.gsub(' ', '-')
+#  end
 end
